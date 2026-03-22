@@ -1,0 +1,13 @@
+<svg width="260" height="70" viewBox="0 0 260 40" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="7" height="50" rx="2" fill="#4F46E5"/>
+  <text
+    x="26"
+    y="36"
+    font-family="Poppins, Arial, sans-serif"
+    font-size="32"
+    font-weight="600"
+    
+  >
+    Sua Presens
+  </text>
+</svg>

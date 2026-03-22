@@ -34,79 +34,71 @@ const SidebarContent: MenuItem[] = [
         url: "/",
         isPro: false,
       },
-      // {
-      //   name: "eCommerce",
-      //   icon: "solar:atom-line-duotone",
-      //   id: uniqueId(),
-      //   url: "https://materialm-react-tailwind-main.netlify.app/",
-      //   isPro: true,
-
-      // },
-      // {
-      //   name: "Analytics",
-      //   icon: "solar:chart-line-duotone",
-      //   id: uniqueId(),
-      //   url: "https://materialm-react-tailwind-main.netlify.app/dashboards/analytics",
-      //   isPro: true,
-      // },
-      // {
-      //   name: "CRM",
-      //   icon: "solar:screencast-2-line-duotone",
-      //   id: uniqueId(),
-      //   url: "https://materialm-react-tailwind-main.netlify.app/dashboards/crm",
-      //   isPro: true,
-      // },
-      // {
-      //   name: "Front Pages",
-      //   id: uniqueId(),
-      //   icon: "solar:home-angle-linear",
-      //   children: [
-      //     {
-      //       name: "Homepage",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/homepage",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "About Us",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/aboutus",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "Blog",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/blog",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "Blog Details",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/blog/detail/streaming-video-way-before-it-was-cool-go-dark-tomorrow",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "Contact Us",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/contact",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "Portfolio",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/portfolio",
-      //       isPro: true,
-      //     },
-      //     {
-      //       name: "Pricing",
-      //       id: uniqueId(),
-      //       url: "https://materialm-react-tailwind-main.netlify.app/frontend-pages/pricing",
-      //       isPro: true,
-      //     },
-      //   ],
-      // },
+      {
+        name: "Pengajuan Absen",
+        icon: "solar:widget-add-line-duotone",
+        id: uniqueId(),
+        url: "/p-absen",
+        isPro: false,
+      },
+      
+      
     ],
   },
+  {
+    heading: "Kelola evaluasi karyawan",
+    children: [
+      {
+        name: "Generate Penilaian",
+        icon: "solar:widget-add-line-duotone",
+        id: uniqueId(),
+        url: "/generate-penilaian",
+        isPro: false,
+      },
+      {
+        name: "Penilaian",
+        icon: "solar:widget-add-line-duotone",
+        id: uniqueId(),
+        url: "/penilaian",
+        isPro: false,
+      },
+      {
+        name: "Kategori Penilaian",
+        icon: "solar:widget-add-line-duotone",
+        id: uniqueId(),
+        url: "/kategori_penilaian",
+        isPro: false,
+      },
+      
+    ],
+  },
+  // {
+  //   heading: "Kelola Data",
+  //   children: [
+  //     {
+  //       name: "Karyawan",
+  //       icon: "solar:widget-add-line-duotone",
+  //       id: uniqueId(),
+  //       url: "/",
+  //       isPro: false,
+  //     },
+  //     {
+  //       name: "User",
+  //       icon: "solar:widget-add-line-duotone",
+  //       id: uniqueId(),
+  //       url: "/p-absen",
+  //       isPro: false,
+  //     },
+  //     {
+  //       name: "shift",
+  //       icon: "solar:widget-add-line-duotone",
+  //       id: uniqueId(),
+  //       url: "/penilaian",
+  //       isPro: false,
+  //     },
+      
+  //   ],
+  // },
   {
     heading: "Utilities",
     children: [

@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
-const flowbite = require("flowbite-react/tailwind");
-
+import flowbite from "flowbite-react/tailwind";
+import flowbitePlugin from "flowbite/plugin";
 const config: Config = {
   darkMode: "class",
   content: [
@@ -107,6 +107,7 @@ const config: Config = {
         bodytext: "var(--color-bodytext)",
         //Dark Colors Variables
         dark: "var(--color-dark)",
+        dark_tebel: "var(--color-dark_tebel)",
         link: "var(--color-link)",
         darklink: "var(--color-darklink)",
         darkborder: "var(--color-darkborder)",
@@ -123,7 +124,7 @@ const config: Config = {
   },
   plugins: [
     //Add Flowbite Plugin
-    require("flowbite/plugin"),
+    flowbitePlugin,
   ],
 };
 export default config;
