@@ -9,6 +9,7 @@ const Header = () => {
   const [isSticky, setIsSticky] = useState(false);
   // 1. State untuk dark mode
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const userData = JSON.parse(localStorage.getItem("user") || "{}");
 
   // 2. Load preferensi dari local storage saat pertama kali render
   useEffect(() => {
@@ -49,8 +50,8 @@ const Header = () => {
               </span>
               <Notification />
             </div>
-
             <div className="flex gap-4 items-center">
+            <h1>{userData.role}</h1>
               {/* 4. Toggle Button */}
               <button 
                 onClick={() => setIsDarkMode(!isDarkMode)}
