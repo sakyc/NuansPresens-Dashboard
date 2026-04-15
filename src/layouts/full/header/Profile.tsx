@@ -5,6 +5,14 @@ import user1 from "/src/assets/images/profile/user-1.jpg";
 import { Link } from "react-router";
 
 const Profile = () => {
+  const handleLogout = () => {
+  // 1. Hapus semua data login
+  localStorage.removeItem("token");
+  localStorage.removeItem("user");
+
+  // Jika pakai react-router:
+  window.location.href = "/auth/login"; 
+};
   return (
     <div className="relative group/menu">
       <Dropdown
@@ -49,7 +57,7 @@ const Profile = () => {
           My Dashboard
         </Dropdown.Item>
         <div className="p-3 pt-0">
-        <Button as={Link}  size={'sm'}  to="/auth/login" className="mt-2 border border-primary text-primary bg-transparent hover:bg-lightprimary outline-none focus:outline-none">Logout</Button>
+        <Button as={Link}  size={'sm'}  to="/auth/login" className="mt-2 border border-primary text-primary bg-transparent hover:bg-lightprimary outline-none focus:outline-none" onClick={handleLogout}>Logout</Button>
         </div>
       </Dropdown>
     </div>
